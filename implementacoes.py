@@ -28,6 +28,9 @@ def vectorGeneretor(tipoVetor, tamanho):
     elif tipoVetor == 3:
         vetor.sort(reverse=True)
         return vetor
+    elif tipoVetor == 4:
+        vetor.reverse()
+        return vetor
 
 
 def insertionSort(v: List[int]):

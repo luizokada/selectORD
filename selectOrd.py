@@ -1,4 +1,3 @@
-from os import name
 from typing import Final
 from implementacoes import selectionSort, insertionSort, vectorGeneretor
 from newOrd import bubbleSort
@@ -30,7 +29,7 @@ def getTipoVetor():
         tipo = input("Digite o tipo: ")
         try:
             val = int(tipo)
-            if val > 0 and val <= 3:
+            if val > 0 and val <= 4:
                 break
             else:
                 print("O tipo é invalido")
@@ -56,8 +55,9 @@ def getTipoOrd(numOrds):
 def printMenuVetor():
     print("Digite a forma que gostaria que o vetor inicial seja produzido")
     print("1- Sem nenhuma ordem especifica")
-    print("2- Ordena de forma crescente")
-    print("3- Ordena de forma Decrescente")
+    print("2- Ordenado de forma crescente")
+    print("3- Ordenado de forma Decrescente")
+    print("4- Ordem inversa")
     print("ctrl + c para sair")
 
 
